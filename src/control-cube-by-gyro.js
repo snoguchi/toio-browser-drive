@@ -1,5 +1,5 @@
 const SPEED = 30;
-const SENSITIVITY = 8;
+const SENSITIVITY = 5;
 
 const controlCubeByGyro = (cube, controllerElement) => {
   let screen;
