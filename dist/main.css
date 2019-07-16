@@ -1,9 +1,15 @@
-.center {
+.title {
+  margin: 20px auto;
+  font-size: 200%;
   text-align: center;
 }
 
 .section {
-  margin: 40px auto;
+  margin: 15px auto;
+}
+
+.center {
+  text-align: center;
 }
 
 .huge-text {
