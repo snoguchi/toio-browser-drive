@@ -1,13 +1,13 @@
 .center {
   text-align: center;
 }
+
 .section {
-  margin: 10px auto;
+  margin: 40px auto;
 }
 
-.button-block {
-  display: block;
-  width: 100%;
+.huge-text {
+  font-size: 200%;
 }
 
 .display-if-disconnected,

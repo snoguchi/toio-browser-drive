@@ -1,22 +1,35 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
-<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous"/>
-<link rel="stylesheet" href="main.css" />
-</head>
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/purecss@1.0.0/build/pure-min.css"
+      integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
 
-<body class="cube-disconnected">
-<h1 class="section center">toio drive</h1>
+  <body class="cube-disconnected">
+    <div class="section center huge-text">うごくトイオ</div>
 
-<div class="section display-if-disconnected">
-  <button id="connect" class="pure-button pure-button-primary button-block">connect to cube</button>
-</div>
+    <div class="section center">
+      <div class="huge-text">1</div>
+      がめんに タッチ すると<br />キューブが まえに すすむよ
+    </div>
 
-<div class="section display-if-connecting center">connecting ...</div>
+    <div class="section center">
+      <div class="huge-text">2</div>
+      がめんを かたむけると<br />キューブが まがるよ
+    </div>
 
-<div class="display-if-connected"></div>
+    <div class="display-if-disconnected section center">
+      <button id="connect" class="pure-button pure-button-primary">はじめる</button>
+    </div>
 
-<script src="main.js"></script>
-</body>
+    <div class="display-if-connecting section center">せつぞく しています ...</div>
+
+    <script src="main.js"></script>
+  </body>
 </html>

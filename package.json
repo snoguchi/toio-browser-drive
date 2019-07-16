@@ -1,12 +1,11 @@
 {
-  "name": "toio-browser-drive",
+  "name": "toio-gyro-control",
   "version": "1.0.0",
-  "description": "toio.js driving game",
+  "description": "Control toio Core Cube by gyro",
   "scripts": {
     "build": "webpack",
-    "start": "webpack-dev-server --https --open",
-    "server": "webpack-dev-server --https --host 0.0.0.0",
-    "format": "prettier --write src/**/*.js"
+    "start": "webpack-dev-server -d --https --open",
+    "format": "prettier --write {src,static}/**/*.{js,html,css}"
   },
   "keywords": [
     "toio"
@@ -25,6 +24,6 @@
   },
   "prettier": {
     "singleQuote": true,
-    "printWidth": 160
+    "printWidth": 120
   }
 }

@@ -20,6 +20,5 @@ module.exports = {
   plugins: [
     new CopyWebpackPlugin([{ from: 'static' }]),
     new webpack.IgnorePlugin(/^ws$/)
-  ],
-  devtool: 'source-map'
+  ]
 };
