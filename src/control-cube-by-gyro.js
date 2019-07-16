@@ -2,7 +2,7 @@ const SPEED = 30;
 const SENSITIVITY = 8;
 
 const controlCubeByGyro = (cube, controllerElement) => {
-  let screen, prevK;
+  let screen;
 
   const start = () => {
     window.addEventListener('deviceorientation', beforeMove, { once: true });
@@ -42,11 +42,7 @@ const controlCubeByGyro = (cube, controllerElement) => {
     }
 
     k = parseInt(k / SENSITIVITY);
-
-    if (k !== prevK) {
-      cube.move(SPEED + k, SPEED - k, 0);
-      prevK = k;
-    }
+    cube.move(SPEED + k, SPEED - k, 0);
   };
 
   const finish = () => {
