@@ -1,7 +1,6 @@
 'use strict';
 
 const path = require('path');
-const webpack = require('webpack');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
@@ -12,13 +11,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'main.js'
   },
-  resolve: {
-    alias: {
-      'noble-mac': 'noble'
-    }
-  },
   plugins: [
-    new CopyWebpackPlugin([{ from: 'static' }]),
-    new webpack.IgnorePlugin(/^ws$/)
+    new CopyWebpackPlugin([{ from: 'static' }])
   ]
 };

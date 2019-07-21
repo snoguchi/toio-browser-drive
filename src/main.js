@@ -1,5 +1,4 @@
-import { NearestScanner } from '@toio/scanner';
-import './bluetooth-patch';
+import { NearestScanner } from 'toio-browser/scanner';
 import bluetoothEvents from './bluetooth-events';
 import controlCubeByGyro from './control-cube-by-gyro';
 

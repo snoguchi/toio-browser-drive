@@ -1,0 +1,7 @@
+{
+  "name": "トイオをうごかす",
+  "short_name": "うごかす",
+  "start_url": "index.html",
+  "orientation": "landscape",
+  "display": "standalone"
+}
